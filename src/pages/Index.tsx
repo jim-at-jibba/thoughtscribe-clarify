@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Mic, FileText, Zap, CheckCircle2, ArrowRight, Apple, Android } from "lucide-react";
+import { Mic, FileText, Zap, CheckCircle2, ArrowRight, Apple, SmartphoneNfc } from "lucide-react";
 
 const Index = () => {
   return (
@@ -57,7 +57,7 @@ const Index = () => {
                   size="lg"
                   className="rounded-full border-thoughtscribe-200 bg-black text-white hover:bg-black/90"
                 >
-                  <Android className="mr-2 h-5 w-5" />
+                  <SmartphoneNfc className="mr-2 h-5 w-5" />
                   Get it on Google Play
                 </Button>
               </div>
