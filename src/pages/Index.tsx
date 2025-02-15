@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Mic, FileText, Zap, CheckCircle2, ArrowRight, Apple, SmartphoneNfc, Key, DeviceSync } from "lucide-react";
+import { Mic, FileText, Zap, CheckCircle2, ArrowRight, Apple, SmartphoneNfc, Key } from "lucide-react";
 
 const Index = () => {
   return (
@@ -79,7 +79,7 @@ const Index = () => {
               polished text from your speech.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
             {features.map((feature, index) => (
               <Card
                 key={feature.title}
@@ -149,11 +149,6 @@ const features = [
     title: "Bring Your Own Key",
     description: "Use your own API key with full encryption. Pay only for what you use, no subscriptions needed.",
     icon: Key,
-  },
-  {
-    title: "Cross-Device Sync",
-    description: "Access your transcriptions seamlessly across all your devices.",
-    icon: DeviceSync,
   },
 ];
 
