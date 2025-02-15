@@ -1,7 +1,6 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Mic, FileText, Zap, CheckCircle2, ArrowRight } from "lucide-react";
+import { Mic, FileText, Zap, CheckCircle2, ArrowRight, Apple, Android } from "lucide-react";
 
 const Index = () => {
   return (
@@ -26,22 +25,42 @@ const Index = () => {
               clear, well-structured text. Perfect for notes, articles, or any
               written content.
             </p>
-            <div className="flex justify-center gap-4">
-              <Button
-                size="lg"
-                className="rounded-full bg-thoughtscribe-900 text-white hover:bg-thoughtscribe-800"
-              >
-                Start Recording
-                <Mic className="ml-2 h-4 w-4" />
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="rounded-full border-thoughtscribe-200"
-              >
-                Watch Demo
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+            <div className="flex flex-col items-center gap-6">
+              <div className="flex justify-center gap-4">
+                <Button
+                  size="lg"
+                  className="rounded-full bg-thoughtscribe-900 text-white hover:bg-thoughtscribe-800"
+                >
+                  Start Recording
+                  <Mic className="ml-2 h-4 w-4" />
+                </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="rounded-full border-thoughtscribe-200"
+                >
+                  Watch Demo
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </div>
+              <div className="flex gap-4 mt-2">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="rounded-full border-thoughtscribe-200 bg-black text-white hover:bg-black/90"
+                >
+                  <Apple className="mr-2 h-5 w-5" />
+                  Download on the App Store
+                </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="rounded-full border-thoughtscribe-200 bg-black text-white hover:bg-black/90"
+                >
+                  <Android className="mr-2 h-5 w-5" />
+                  Get it on Google Play
+                </Button>
+              </div>
             </div>
           </div>
         </div>
