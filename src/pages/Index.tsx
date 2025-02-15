@@ -1,26 +1,27 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Mic, FileText, Zap, CheckCircle2, ArrowRight, Apple, SmartphoneNfc } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-thoughtscribe-white">
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="container px-4 py-24 mx-auto">
           <div className="text-center space-y-8 animate-fade-up">
             <div className="inline-block">
-              <div className="inline-flex items-center rounded-lg bg-thoughtscribe-100 px-3 py-1 text-sm font-medium text-thoughtscribe-800 mb-8">
-                <span className="animate-pulse bg-thoughtscribe-500 rounded-full w-2 h-2 mr-2"></span>
+              <div className="inline-flex items-center rounded-lg bg-thoughtscribe-background px-3 py-1 text-sm font-medium text-thoughtscribe-black mb-8">
+                <span className="animate-pulse bg-thoughtscribe-primary rounded-full w-2 h-2 mr-2"></span>
                 Now with enhanced AI capabilities
               </div>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-thoughtscribe-900">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-thoughtscribe-black">
               Transform Speech into
               <br />
               Polished Text
             </h1>
-            <p className="mx-auto max-w-2xl text-lg text-thoughtscribe-600">
+            <p className="mx-auto max-w-2xl text-lg text-thoughtscribe-grey-dark">
               Record your thoughts naturally, and let our AI transform them into
               clear, well-structured text. Perfect for notes, articles, or any
               written content.
@@ -29,7 +30,7 @@ const Index = () => {
               <div className="flex justify-center gap-4">
                 <Button
                   size="lg"
-                  className="rounded-full bg-thoughtscribe-900 text-white hover:bg-thoughtscribe-800"
+                  className="rounded-full bg-thoughtscribe-primary text-white hover:bg-thoughtscribe-primary/90"
                 >
                   Start Recording
                   <Mic className="ml-2 h-4 w-4" />
@@ -37,7 +38,7 @@ const Index = () => {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="rounded-full border-thoughtscribe-200"
+                  className="rounded-full border-thoughtscribe-grey-soft hover:bg-thoughtscribe-grey-bg"
                 >
                   Watch Demo
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -47,7 +48,7 @@ const Index = () => {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="rounded-full border-thoughtscribe-200 bg-black text-white hover:bg-black/90"
+                  className="rounded-full border-thoughtscribe-grey-soft bg-black text-white hover:bg-black/90"
                 >
                   <Apple className="mr-2 h-5 w-5" />
                   Download on the App Store
@@ -55,7 +56,7 @@ const Index = () => {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="rounded-full border-thoughtscribe-200 bg-black text-white hover:bg-black/90"
+                  className="rounded-full border-thoughtscribe-grey-soft bg-black text-white hover:bg-black/90"
                 >
                   <SmartphoneNfc className="mr-2 h-5 w-5" />
                   Get it on Google Play
@@ -67,13 +68,13 @@ const Index = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-24 bg-thoughtscribe-50">
+      <section className="py-24 bg-thoughtscribe-background">
         <div className="container px-4 mx-auto">
           <div className="text-center mb-16 animate-fade-up">
-            <h2 className="text-3xl font-bold text-thoughtscribe-900 mb-4">
+            <h2 className="text-3xl font-bold text-thoughtscribe-black mb-4">
               Everything You Need for Perfect Transcription
             </h2>
-            <p className="text-thoughtscribe-600 max-w-2xl mx-auto">
+            <p className="text-thoughtscribe-grey-dark max-w-2xl mx-auto">
               Thoughtscribe combines powerful features to deliver accurate,
               polished text from your speech.
             </p>
@@ -82,16 +83,16 @@ const Index = () => {
             {features.map((feature, index) => (
               <Card
                 key={feature.title}
-                className="p-6 border-thoughtscribe-100 bg-white/50 backdrop-blur-sm animate-fade-up"
+                className="p-6 border-thoughtscribe-grey-soft bg-white/50 backdrop-blur-sm animate-fade-up"
                 style={{
                   animationDelay: `${index * 100}ms`,
                 }}
               >
-                <feature.icon className="h-12 w-12 text-thoughtscribe-500 mb-4" />
-                <h3 className="text-xl font-semibold text-thoughtscribe-900 mb-2">
+                <feature.icon className="h-12 w-12 text-thoughtscribe-primary mb-4" />
+                <h3 className="text-xl font-semibold text-thoughtscribe-black mb-2">
                   {feature.title}
                 </h3>
-                <p className="text-thoughtscribe-600">{feature.description}</p>
+                <p className="text-thoughtscribe-grey-dark">{feature.description}</p>
               </Card>
             ))}
           </div>
@@ -99,19 +100,19 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-thoughtscribe-900 text-white">
+      <section className="py-24 bg-thoughtscribe-primary text-white">
         <div className="container px-4 mx-auto text-center">
           <div className="max-w-2xl mx-auto space-y-8 animate-fade-up">
             <h2 className="text-3xl font-bold">
               Ready to Transform Your Speech into Perfect Text?
             </h2>
-            <p className="text-thoughtscribe-100">
+            <p className="text-thoughtscribe-accent">
               Join thousands of users who are already saving time and creating
               better content with Thoughtscribe.
             </p>
             <Button
               size="lg"
-              className="rounded-full bg-white text-thoughtscribe-900 hover:bg-thoughtscribe-100"
+              className="rounded-full bg-white text-thoughtscribe-primary hover:bg-thoughtscribe-grey-bg"
             >
               Get Started Now
               <ArrowRight className="ml-2 h-4 w-4" />
