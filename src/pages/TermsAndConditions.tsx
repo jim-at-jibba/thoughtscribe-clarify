@@ -24,7 +24,7 @@ const TermsAndConditions = () => {
         <div className="max-w-3xl space-y-8">
           <div className="space-y-4">
             <p className="text-thoughtscribe-grey-dark">
-              Last updated: 18/10/2024
+              Last updated: 19/02/2025
             </p>
             <p className="text-thoughtscribe-grey-dark">
               Please read these Terms and Conditions ("Terms", "Terms and
