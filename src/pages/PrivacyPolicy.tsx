@@ -23,7 +23,7 @@ const PrivacyPolicy = () => {
         <div className="max-w-3xl space-y-8">
           <div className="space-y-4">
             <p className="text-thoughtscribe-grey-dark">
-              Last updated: 18/10/2024
+              Last updated: 19/02/2025
             </p>
           </div>
 
@@ -61,9 +61,8 @@ const PrivacyPolicy = () => {
               This information may include:
             </p>
             <ul className="list-disc pl-6 text-thoughtscribe-grey-dark space-y-2">
-              <li>Audio recordings (temporarily stored for processing)</li>
+              <li>Audio recordings (stored for processing)</li>
               <li>Transcribed text content</li>
-              <li>API keys (if you choose to use your own)</li>
               <li>Usage data (e.g., transcription length, feature usage)</li>
               <li>Device information and settings</li>
             </ul>
@@ -80,7 +79,6 @@ const PrivacyPolicy = () => {
               <li>Convert your speech into text using AI transcription</li>
               <li>Format and structure your transcribed content</li>
               <li>Enhance readability while maintaining original meaning</li>
-              <li>Process payments and handle API key usage</li>
               <li>Improve our transcription accuracy and features</li>
               <li>
                 Send you technical notices, updates, security alerts, and
