@@ -1,7 +1,16 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Mic, FileText, Zap, CheckCircle2, ArrowRight, Apple, SmartphoneNfc, Key } from "lucide-react";
+import {
+  Mic,
+  FileText,
+  Zap,
+  CheckCircle2,
+  ArrowRight,
+  Apple,
+  SmartphoneNfc,
+  Key,
+} from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -48,17 +57,21 @@ const Index = () => {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="rounded-full border-thoughtscribe-grey-soft bg-black text-white hover:bg-black/90"
+                  className="rounded-full border-2 border-thoughtscribe-primary bg-white text-black hover:bg-thoughtscribe-grey-bg"
                 >
-                  <Apple className="mr-2 h-5 w-5" />
+                  <img src="/apple.png" alt="Apple Icon" className="mr-2 h-5" />
                   Download on the App Store
                 </Button>
                 <Button
                   variant="outline"
                   size="lg"
-                  className="rounded-full border-thoughtscribe-grey-soft bg-black text-white hover:bg-black/90"
+                  className="rounded-full border-2 border-thoughtscribe-primary bg-white text-black hover:bg-thoughtscribe-grey-bg"
                 >
-                  <SmartphoneNfc className="mr-2 h-5 w-5" />
+                  <img
+                    src="/google.png"
+                    alt="Google Icon"
+                    className="mr-2 h-5 w-5 bg-white rounded-full"
+                  />
                   Get it on Google Play
                 </Button>
               </div>
@@ -92,7 +105,9 @@ const Index = () => {
                 <h3 className="text-xl font-semibold text-thoughtscribe-black mb-2">
                   {feature.title}
                 </h3>
-                <p className="text-thoughtscribe-grey-dark">{feature.description}</p>
+                <p className="text-thoughtscribe-grey-dark">
+                  {feature.description}
+                </p>
               </Card>
             ))}
           </div>
@@ -120,6 +135,31 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Footer Section */}
+      <footer className="py-8 bg-thoughtscribe-background">
+        <div className="container px-4 mx-auto">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-thoughtscribe-grey-dark">
+              © {new Date().getFullYear()} Thoughtscribe. All rights reserved.
+            </p>
+            <div className="flex gap-6">
+              <Link
+                to="/privacy-policy"
+                className="text-thoughtscribe-grey-dark hover:text-thoughtscribe-primary"
+              >
+                Privacy Policy
+              </Link>
+              <a
+                href="mailto:support@thoughtscribe.ai"
+                className="text-thoughtscribe-grey-dark hover:text-thoughtscribe-primary"
+              >
+                Contact
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
@@ -127,7 +167,8 @@ const Index = () => {
 const features = [
   {
     title: "Instant Recording",
-    description: "Start recording with a single click. No complex setup needed.",
+    description:
+      "Start recording with a single click. No complex setup needed.",
     icon: Mic,
   },
   {
@@ -142,12 +183,14 @@ const features = [
   },
   {
     title: "Perfect Polish",
-    description: "Enhances readability while maintaining your original meaning.",
+    description:
+      "Enhances readability while maintaining your original meaning.",
     icon: CheckCircle2,
   },
   {
     title: "Bring Your Own Key",
-    description: "Use your own API key with full encryption. Pay only for what you use, no subscriptions needed.",
+    description:
+      "Use your own API key with full encryption. Pay only for what you use, no subscriptions needed.",
     icon: Key,
   },
 ];
