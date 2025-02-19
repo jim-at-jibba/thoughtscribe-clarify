@@ -175,6 +175,12 @@ const PrivacyPolicy = () => {
               >
                 Privacy Policy
               </Link>
+              <Link
+                to="/terms-and-conditions"
+                className="text-thoughtscribe-grey-dark hover:text-thoughtscribe-primary"
+              >
+                Terms & Conditions
+              </Link>
               <a
                 href="mailto:support@thoughtscribe.ai"
                 className="text-thoughtscribe-grey-dark hover:text-thoughtscribe-primary"
