@@ -36,7 +36,7 @@ const Index = () => {
               written content.
             </p>
             <div className="flex flex-col items-center gap-6">
-              <div className="flex justify-center gap-4">
+              {/* <div className="flex justify-center gap-4">
                 <Button
                   size="lg"
                   className="rounded-full bg-thoughtscribe-primary text-white hover:bg-thoughtscribe-primary/90"
@@ -52,12 +52,16 @@ const Index = () => {
                   Watch Demo
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
-              </div>
-              <div className="flex gap-4 mt-2">
+              </div> */}
+
+              <div className="flex gap-4 mt-2" id="download-buttons">
                 <Button
                   variant="outline"
                   size="lg"
                   className="rounded-full border-2 border-thoughtscribe-primary bg-white text-black hover:bg-thoughtscribe-grey-bg"
+                  onClick={() => {
+                    alert("Coming soon!");
+                  }}
                 >
                   <img src="/apple.png" alt="Apple Icon" className="mr-2 h-5" />
                   Download on the App Store
@@ -65,6 +69,9 @@ const Index = () => {
                 <Button
                   variant="outline"
                   size="lg"
+                  onClick={() => {
+                    alert("Coming soon!");
+                  }}
                   className="rounded-full border-2 border-thoughtscribe-primary bg-white text-black hover:bg-thoughtscribe-grey-bg"
                 >
                   <img
@@ -88,7 +95,7 @@ const Index = () => {
               Everything You Need for Perfect Transcription
             </h2>
             <p className="text-thoughtscribe-grey-dark max-w-2xl mx-auto">
-              Thoughtscribe combines powerful features to deliver accurate,
+              ThoughtScribe combines powerful features to deliver accurate,
               polished text from your speech.
             </p>
           </div>
@@ -128,6 +135,9 @@ const Index = () => {
             <Button
               size="lg"
               className="rounded-full bg-white text-thoughtscribe-primary hover:bg-thoughtscribe-grey-bg"
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
             >
               Get Started Now
               <ArrowRight className="ml-2 h-4 w-4" />
@@ -141,7 +151,7 @@ const Index = () => {
         <div className="container px-4 mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-thoughtscribe-grey-dark">
-              © {new Date().getFullYear()} Thoughtscribe. All rights reserved.
+              © {new Date().getFullYear()} ThoughtScribe. All rights reserved.
             </p>
             <div className="flex gap-6">
               <Link

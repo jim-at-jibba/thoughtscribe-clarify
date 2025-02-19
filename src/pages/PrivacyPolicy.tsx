@@ -32,10 +32,10 @@ const PrivacyPolicy = () => {
               1. Introduction
             </h2>
             <p className="text-thoughtscribe-grey-dark">
-              Thoughtscribe ("we", "our", or "us") is committed to protecting
+              ThoughtScribe ("we", "our", or "us") is committed to protecting
               your privacy. This Privacy Policy explains how we collect, use,
               disclose, and safeguard your information when you use our mobile
-              application Thoughtscribe (the "App").
+              application ThoughtScribe (the "App").
             </p>
             <p className="text-thoughtscribe-grey-dark">
               Please read this privacy policy carefully. If you do not agree
@@ -168,7 +168,7 @@ const PrivacyPolicy = () => {
         <div className="container px-4 mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-thoughtscribe-grey-dark">
-              © {new Date().getFullYear()} Thoughtscribe. All rights reserved.
+              © {new Date().getFullYear()} ThoughtScribe. All rights reserved.
             </p>
             <div className="flex gap-6">
               <Link
