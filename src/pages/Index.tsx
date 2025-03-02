@@ -55,7 +55,10 @@ const Index = () => {
                 </Button>
               </div> */}
 
-              <div className="flex gap-4 mt-2" id="download-buttons">
+              <div
+                className="flex flex-col sm:flex-row gap-4 mt-2"
+                id="download-buttons"
+              >
                 <Button
                   variant="outline"
                   size="lg"
