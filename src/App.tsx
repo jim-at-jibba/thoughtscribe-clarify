@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
+import VerificationSuccess from "./pages/VerificationSuccess";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,10 @@ const App = () => (
           <Route
             path="/terms-and-conditions"
             element={<TermsAndConditions />}
+          />
+          <Route
+            path="/verification-success"
+            element={<VerificationSuccess />}
           />
         </Routes>
       </BrowserRouter>
