@@ -106,6 +106,18 @@ export default function Contact() {
                   : "click to reveal email"}
               </a>
             </p>
+
+            <div className="border-t border-slate-200 mt-8 pt-6">
+              <p className="text-sm text-muted-foreground">
+                Looking to delete your account?{" "}
+                <Link
+                  to="/delete-account"
+                  className="text-red-600 hover:underline"
+                >
+                  Go to account deletion page
+                </Link>
+              </p>
+            </div>
           </div>
 
           <div className="mt-8">
