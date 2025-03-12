@@ -21,12 +21,12 @@ const Footer = () => {
             >
               Terms & Conditions
             </Link>
-            <a
-              href="mailto:support@thoughtscribe.ai"
+            <Link
+              to="/contact"
               className="text-thoughtscribe-grey-dark hover:text-thoughtscribe-primary"
             >
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       </div>
