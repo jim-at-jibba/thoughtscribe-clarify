@@ -8,7 +8,7 @@ export default function DeleteAccount() {
   const [emailRevealed, setEmailRevealed] = useState(false);
 
   // Email parts split to avoid easy scraping
-  const emailUser = "deletion";
+  const emailUser = "support";
   const emailDomain = "jamesbest.uk";
 
   const handleRevealEmail = (e: React.MouseEvent) => {
