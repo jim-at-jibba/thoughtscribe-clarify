@@ -64,7 +64,10 @@ const Index = () => {
                   size="lg"
                   className="rounded-full border-2 border-thoughtscribe-primary bg-white text-black hover:bg-thoughtscribe-grey-bg"
                   onClick={() => {
-                    alert("Coming soon!");
+                    window.open(
+                      "https://apps.apple.com/us/app/thoughtscribe/id6742878479",
+                      "_blank",
+                    );
                   }}
                 >
                   <img src="/apple.png" alt="Apple Icon" className="mr-2 h-5" />
