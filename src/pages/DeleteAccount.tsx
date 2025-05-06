@@ -21,7 +21,7 @@ export default function DeleteAccount() {
     const body =
       "Please include your account email address and username in this email to help us process your deletion request.";
     const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(
-      subject
+      subject,
     )}&body=${encodeURIComponent(body)}`;
 
     // Open the email client after a short delay
@@ -77,7 +77,10 @@ export default function DeleteAccount() {
                     variant="outline"
                     className="rounded-full border-2 border-thoughtscribe-primary bg-white text-black hover:bg-thoughtscribe-grey-bg"
                     onClick={() => {
-                      alert("Coming soon!");
+                      window.open(
+                        "https://apps.apple.com/us/app/thoughtscribe/id6742878479",
+                        "_blank",
+                      );
                     }}
                   >
                     <img

@@ -19,7 +19,7 @@ export default function Contact() {
     const emailAddress = `${emailUser}@${emailDomain}`;
     const subject = "ThoughtScribe Support Request";
     const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(
-      subject
+      subject,
     )}`;
 
     // Open the email client after a short delay
@@ -69,7 +69,10 @@ export default function Contact() {
                   variant="outline"
                   className="rounded-full border-2 border-thoughtscribe-primary bg-white text-black hover:bg-thoughtscribe-grey-bg"
                   onClick={() => {
-                    alert("Coming soon!");
+                    window.open(
+                      "https://apps.apple.com/us/app/thoughtscribe/id6742878479",
+                      "_blank",
+                    );
                   }}
                 >
                   <img src="/apple.png" alt="Apple Icon" className="mr-2 h-5" />
